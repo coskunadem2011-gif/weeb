@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Adem Emir | Proje Defteri</title>
+    <style>
+        /* Arka Plan: Eskitilmiş Kağıt ve Kilim Dokusu */
+        body {
+            background-color: #f4e4bc; /* Parşömen rengi */
+            background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+            color: #4a2c2a; /* Koyu kahve tonu */
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            border: 25px solid #8b0000; /* Kilim bordürü gibi koyu kırmızı çerçeve */
+            border-image: repeating-linear-gradient(45deg, #8b0000, #8b0000 10px, #b22222 10px, #b22222 20px) 25;
+            min-height: 100vh;
+        }
+
+        /* Kilim Motifli Üst Başlık */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 5px double #4a2c2a;
+            margin: 0 50px;
+        }
+
+        .motif {
+            font-size: 40px;
+            color: #8b0000;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* İçerik Alanı */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+        }
+
+        /* Eski El Yazısı Kutuları (Projeler) */
+        .proje-kutu {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid #cdaa7d;
+            padding: 30px;
+            margin-bottom: 30px;
+            position: relative;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .proje-kutu::before {
+            content: "❈"; /* Kilim motifi sembolü */
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #f4e4bc;
+            padding: 0 10px;
+            color: #8b0000;
+            font-size: 24px;
+        }
+
+        h2 {
+            border-bottom: 1px solid #4a2c2a;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Alt Bilgi */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 30px;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        /* Linkler */
+        a { color: #8b0000; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <span class="motif">◈ ◈ ◈ ◈ ◈</span>
+        <h1>ADEM EMİR</h1>
+        <p><i>Teknoloji Meraklısı ve Geleceğin Elektrikçisinin Defteri</i></p>
+        <p>Simav / Kütahya - Hicrî 1447</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="proje-kutu">
+            <h2>Güneş Enerjisi Çalışmaları</h2>
+            <p>1800'lerin kandil aydınlatmasından günümüzün güneş hücrelerine... Kendi kurduğum güneş istasyonu ile enerjiyi kadim usullerle değil, modern devrelerle depoluyorum.</p>
+        </div>
+
+        <div class="proje-kutu">
+            <h2>Masaüstü Robot (AE-1 Core)</h2>
+            <p>İçerisinde bir "ruh" barındıran bu elektronik kutu, OLED ekranı üzerinden benimle hasbihal etmektedir. C++ ve Python dilleriyle terbiye edilmiştir.</p>
+        </div>
+
+        <div class="proje-kutu">
+            <h2>Tarih ve Biyografi Defteri</h2>
+            <p>Ecdadımız Fatih Sultan Mehmet ve Sultan Abdülhamid Han'ın hayatlarını, YouTube mecrasında görsel hikayelere dönüştürmekteyim.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <span class="motif">◈ ◈ ◈</span>
+        <p>Bu dijital varak tamamen yasal ve şahsi kullanım içindir.</p>
+    </footer>
+
+</body>
+</html>
